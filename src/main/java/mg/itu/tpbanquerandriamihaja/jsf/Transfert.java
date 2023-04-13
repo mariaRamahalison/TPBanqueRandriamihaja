@@ -17,7 +17,7 @@ import mg.itu.tpbanquerandriamihaja.jsf.util.Util;
  */
 @Named(value = "transfert")
 @RequestScoped
-public class TransfertBean {
+public class Transfert {
 
     @EJB
     private GestionnaireCompte gestionnaireCompte;
