@@ -7,7 +7,6 @@ import jakarta.annotation.sql.DataSourceDefinition;
 import jakarta.ejb.Stateless;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
 import java.util.List;
 import mg.itu.tpbanquerandriamihaja.entities.CompteBancaire;
@@ -28,11 +27,10 @@ import mg.itu.tpbanquerandriamihaja.entities.CompteBancaire;
 @Stateless
 public class GestionnaireCompte {
     
-     @PersistenceContext(unitName = "banquePU")
+    @PersistenceContext(unitName = "banquePU")
     private EntityManager em;
-     
-     
-     /**
+
+      /**
      * persist compteBancaire 
      * @param compteBancaire 
      */

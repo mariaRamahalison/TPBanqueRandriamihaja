@@ -96,14 +96,13 @@ public class CompteBancaire implements Serializable {
         return "mg.itu.tpbanquerandriamihaja.entities.CompteBancaire[ id=" + id + " ]";
     }
 
+    public CompteBancaire() {}
+    
     public CompteBancaire(String nom, int solde) {
         this.nom = nom;
         this.solde = solde;
     }
-    
-    public CompteBancaire() {}
 
-    
     public void deposer(int montant) {
         solde += montant;
     }
